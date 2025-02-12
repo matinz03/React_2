@@ -101,24 +101,24 @@ const Pizza = ({ pizzaobj }) => {
 };
 const Footer = () => {
   const time = new Date().toTimeString().split(":")[0];
-  const closeHour = 18;
+  const closeHour = 22;
   const openHour = 12;
   const isOpen = time > openHour && time < closeHour;
   console.log(time);
   return (
     <footer className="footer">
       {isOpen ? (
-        <Order />
+        <Order cHour={closeHour} />
       ) : (
         <p>"We are closed right now, we open at {openHour}:00."</p>
       )}
     </footer>
   );
 };
-const Order = () => {
+const Order = ({cHour}) => {
   return (
     <div className="order">
-      <p>we're open until 22:00. Come visit or order online!</p>
+      <p>we're open until {cHour}:00. Come visit or order online!</p>
       <button className="btn">Order</button>
     </div>
   );
@@ -129,43 +129,3 @@ root.render(
     <App />
   </StrictMode>
 );
-// const Pizza = ({ pizzaobj }) => {
-//   return <Availability item={pizzaobj} available={pizzaobj.soldOut} />;
-// };
-// const Availability = ({ item, available }) => {
-//   let dclass = "pizza";
-//   return available ? (
-//     <li className={dclass + " sold-out"}>
-//       <img src={item.photoName} alt={item.name}></img>
-//       <div>
-//         <h3>{item.name}</h3>
-//         <p>{item.ingredients}</p>
-//         <span>Sold-Out</span>
-//       </div>
-//     </li>
-//   ) : (
-//     <li className={dclass}>
-//       <img src={item.photoName} alt={item.name}></img>
-//       <div>
-//         <h3>{item.name}</h3>
-//         <p>{item.ingredients}</p>
-//         <span>{item.price + "$"}</span>
-//       </div>
-//     </li>
-//   );
-// };
-// function Pizza() {
-//   return (
-//     <div className="pizza">
-//       {pizzaData.map((element, id) => (
-//         <div key={id}>
-//           <h3>{element.name}</h3>
-//           <img src={`${element.photoName}`} alt={element.name} />
-//           <br />
-//           <p>{element.ingredients}</p>
-//           <span>{element.price}</span>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
