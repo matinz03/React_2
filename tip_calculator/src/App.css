@@ -1,0 +1,77 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Overall app container */
+  .App {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Tip Calculator container */
+  .tipcalc-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* List and list items */
+  .tipcalc-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  .tipcalc-list-item {
+    margin-bottom: 15px;
+  }
+  
+  /* Labels and inputs */
+  .tipcalc-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.95em;
+  }
+  
+  .tipcalc-input,
+  .tipcalc-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.95em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Result text */
+  .tipcalc-result {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Button */
+  .tipcalc-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.95em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tipcalc-button:hover {
+    background-color: #0056b3;
+  }
+  
