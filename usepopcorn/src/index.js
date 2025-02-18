@@ -26,7 +26,7 @@ root.render(
       size={20}
       messages={["bad", "not bad", "good", "great", "eccelente"]}
       onSetRated={null}
-      maxRating={"fea"}
+      maxRating={5}
     ></StarRating>
     <Test></Test>
     {/* <App /> */}
