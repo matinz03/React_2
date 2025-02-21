@@ -6,7 +6,7 @@ import MovieDetails from "./MovieDetails";
 import { useMovies } from "./useMovies";
 import Search from "./Search";
 import { useLocalStorage } from "./useLocalStorage";
-export const KEY = "c701cd1f";
+export const KEY = process.env.REACT_APP_API_KEY;
 
 export default function App() {
   const [query, setQuery] = useState("");
