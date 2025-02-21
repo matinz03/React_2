@@ -1,6 +1,7 @@
 import StarRating from "./StarRating";
 import { Loader, KEY } from "./App";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useKey } from "./useKey";
 export default function MovieDetails({
   selectedId,
   onCloseBtn,
@@ -8,7 +9,7 @@ export default function MovieDetails({
   watched,
 }) {
   const [movie, setMovie] = useState({});
-  const [rated, setRated] = useState(0);
+  const [rated, setRated] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const isWatched = watched.map((movie) => movie.imdbID).includes(selectedId);
   const userWatchedRating = watched.find(
@@ -41,6 +42,10 @@ export default function MovieDetails({
     },
     [selectedId]
   );
+  const countRef = useRef(null);
+  useEffect(() => {
+    if (rated) countRef.current++;
+  }, [rated]);
   function addMovie() {
     const newMovie = {
       imdbID: selectedId,
@@ -50,6 +55,7 @@ export default function MovieDetails({
       runtime: Number(runtime.split(" ").at(0)),
       imdbRating: Number(imdbRating),
       userRating: Number(rated),
+      countRated: countRef,
     };
     onAddMovie(newMovie);
     onCloseBtn();
@@ -66,20 +72,7 @@ export default function MovieDetails({
     },
     [title]
   );
-  useEffect(
-    function () {
-      function callback(e) {
-        if (e.code === "Backspace") {
-          onCloseBtn();
-        }
-      }
-      document.addEventListener("keydown", callback);
-      return function () {
-        document.removeEventListener("keydown", callback);
-      };
-    },
-    [onCloseBtn]
-  );
+  useKey(onCloseBtn, "Escape", true);
 
   return (
     <div className="details">

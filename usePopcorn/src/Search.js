@@ -1,13 +1,24 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
+import { useKey } from "./useKey";
 export default function Search({ query, setQuery }) {
   const searchRef = useRef(null);
-  useEffect(() => {
-    const handleKeyDown = () => {
+
+  useKey(
+    function () {
+      if (document.activeElement !== searchRef.current) {
+        setQuery("");
+      }
+    },
+    "Enter",
+    true
+  );
+  useKey(
+    function handleKeyDown() {
       searchRef.current.focus();
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+    },
+    "Escape",
+    false
+  );
 
   return (
     <input
