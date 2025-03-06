@@ -1,0 +1,148 @@
+{
+  "cities": [
+    {
+      "cityName": "Isfahan",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2025-03-04T12:56:21.899Z",
+      "notes": "nice",
+      "position": {
+        "lat": "32.66036872467316",
+        "lng": "51.68418288230896"
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2025-03-04T12:56:38.355Z",
+      "notes": "",
+      "position": {
+        "lat": "35.63051198300061",
+        "lng": "51.39404296875001"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "48.8565834593617",
+        "lng": "2.3524475097656254"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Brussels",
+      "country": "Belgium",
+      "emoji": "🇧🇪",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "50.8232885012118",
+        "lng": "4.367065429687501"
+      },
+      "id": 4
+    },
+    {
+      "cityName": "Undenheim",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "49.84019666664545",
+        "lng": "8.242835998535158"
+      },
+      "id": 5
+    },
+    {
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "emoji": "🇳🇱",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "52.37895253000267",
+        "lng": "4.883422851562501"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Koln",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "50.913424211321335",
+        "lng": "6.937866210937501"
+      },
+      "id": 8
+    },
+    {
+      "cityName": "Milan",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "45.44086267178177",
+        "lng": "9.195556640625002"
+      },
+      "id": 9
+    },
+    {
+      "cityName": "Turin",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "45.081278612418764",
+        "lng": "7.673950195312501"
+      },
+      "id": 10
+    },
+    {
+      "cityName": "Genoa",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2025-03-04T12:57:17.312Z",
+      "notes": "",
+      "position": {
+        "lat": "44.46123053905882",
+        "lng": "8.843994140625002"
+      },
+      "id": 11
+    },
+    {
+      "cityName": "Utajarvi",
+      "country": "Finland",
+      "emoji": "🇫🇮",
+      "date": "2025-03-04T15:20:26.685Z",
+      "notes": "",
+      "position": {
+        "lat": "64.66151739623564",
+        "lng": "26.542968750000004"
+      },
+      "id": 12
+    },
+    {
+      "cityName": "Aleksandrow Lodzki",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2025-03-05T09:01:06.219Z",
+      "notes": "",
+      "position": {
+        "lat": "51.83577752045248",
+        "lng": "19.16015625"
+      },
+      "id": 13
+    }
+  ]
+}
